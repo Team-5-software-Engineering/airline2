@@ -1,0 +1,253 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    background-repeat: no-repeat;
+    height: 625px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.dropbtn {
+	margin-right: 5px;
+	background-color: #3498DB;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+	background-color: #2980B9;
+  }
+  
+
+.dropdown {
+	float: right;
+	position: relative;
+	display: inline-block;
+}
+  
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#box {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 1em;
+    top: 50%;
+    left: 50%;
+    margin-top: 150px;
+    margin-left: 200px;
+    display: inline-grid;
+    grid-template-columns: 400px 500px;
+}
+
+
+#usrimg{
+    padding-top: 50px;
+    padding-left: 10px;
+    height: 150px;
+}
+
+#boxcol1{
+    text-align: center;
+    opacity: 0.8;
+    font-family: 'Concert One', cursive;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 5px solid blue;
+    color: black;
+}
+
+#boxcol1 h1{
+    padding-left: 10px;
+    font-family: 'Zilla Slab Highlight', cursive;
+    color: tomato;
+}
+
+#boxcol2 {
+    padding-left: 15px;
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+
+#boxcol2 h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Zilla Slab Highlight', cursive;
+    text-decoration: 1px solid purple underline;
+}
+
+#ans{
+    font-family: 'Manrope', sans-serif;
+}
+
+#ans2{
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+}
+
+.button61{
+    display:inline-block;
+    border-radius:0.15em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    text-transform:uppercase;
+    font-weight:400;
+    color:black;
+    background-color:white;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    text-align:center;
+    position:relative;
+}
+
+#button61:hover{
+    top:0.1em;
+}
+
+#button62{
+    display:inline-block;
+    padding:0.7em 1.4em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.15em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#FFFFFF;
+    background-color:#3369ff;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    text-align:center;
+    position:relative;
+}
+
+#button62:hover{
+    top:0.1em;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#form {
+    font-family: 'Catamaran',sans-serif;;
+}
+
+.hideform {
+    display: none;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+  
+  /* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+ }
+  
+  
+  /* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#edit {
+    color: white;
+    font-family:'padauk',sans-serif;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+}
+
+input[type=password] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+}
+
+#ans1{
+    margin-left: 90px;
+    font-weight: bolder;
+}
+
+#ans2{
+    margin-left: 90px;
+    font-weight: bolder;
+}
+
+@media all and (max-width:30em){
+     #button61{
+        display:block;
+        margin:0.4em auto; 
+     }
+    #button62{
+        display:block;
+        margin:0.4em auto; 
+     }
+}
